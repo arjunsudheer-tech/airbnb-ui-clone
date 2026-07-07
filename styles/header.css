@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  padding: 0 40px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 225, 225);
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.airbnb-logo {
+  height: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  align-items: center;
+}
+
+.location-box {
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid rgb(195, 195, 195);
+  padding-left: 10px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.location-box::placeholder {
+  font-family: Inter , Arial;
+  font-size: 16px;
+}
+
+.search-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 65px;
+  margin-left: -1px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.globe-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button .tooltip ,
+.globe-container .tooltip {
+  position: absolute;
+  font-family: Inter , Arial;
+  background-color: rgb(255, 90, 95);
+  color: white;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  bottom: -30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+
+.search-button:hover .tooltip ,
+.globe-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 30px;
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.airbnb-text {
+  font-family: Cabin , Arial;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.globe-icon {
+  height: 16px;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  height: 30px;
+  cursor: pointer;
+}
